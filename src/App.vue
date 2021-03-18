@@ -1,30 +1,31 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <Sidebar id="sidebar" />
+    <router-view id="router" :key="$route.path" />
   </div>
-  <router-view />
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts">
+import { defineComponent } from "vue";
+import Sidebar from "@/views/Sidebar.vue";
 
+export default defineComponent({
+  components: { Sidebar }
+});
+</script>
+
+<style scoped>
 #nav {
-  padding: 30px;
+  display: flex;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+#sidebar {
+  width: 30%;
+  border: 1px red solid;
+  padding: 10px;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+#router {
+  width: 70%;
+  border: 1px red solid;
+  padding: 40px;
 }
 </style>
