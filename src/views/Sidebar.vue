@@ -42,6 +42,21 @@
                 setup() & interface & ref()
               </router-link>
             </li>
+            <li>
+              <router-link to="/example02/example02-02">
+                composition-api
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/example02/students/29/homeworks/35">
+                students/29/homeworks/35
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/example02/students/15/homeworks/20">
+                students/15/homeworks/20
+              </router-link>
+            </li>
           </ul>
         </li>
       </ul>
