@@ -37,6 +37,11 @@
                 </li>
               </ul>
             </li>
+            <li>
+              <router-link to="/example02/example02-01">
+                setup() & interface & ref()
+              </router-link>
+            </li>
           </ul>
         </li>
       </ul>

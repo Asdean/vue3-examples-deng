@@ -13,6 +13,10 @@ const routes: Array<RouteRecordRaw> = [
     props: true,
     path: "/example02/students/:sid/homeworks/:hid",
     component: () => import("@/views/Example02/routerPassingParameter.vue")
+  },
+  {
+    path: "/example02/example02-01",
+    component: () => import("@/views/Example02/example02-01.vue")
   }
 ];
 
