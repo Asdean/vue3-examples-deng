@@ -23,7 +23,7 @@ import { defineComponent, ref } from "vue";
 export default defineComponent({
   setup() {
     const submitButtonDisabled = ref(true);
-    const active = ref(true);
+    const active = ref(false);
     const setAgree = () => {
       submitButtonDisabled.value = !submitButtonDisabled.value;
     };

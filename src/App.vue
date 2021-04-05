@@ -1,16 +1,16 @@
 <template>
   <div id="nav">
-    <Sidebar id="sidebar" />
+    <sidebar id="sidebar" />
     <router-view id="router" :key="$route.path" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Sidebar from "@/views/Sidebar.vue";
+import sidebar from "@/views/Sidebar.vue";
 
 export default defineComponent({
-  components: { Sidebar }
+  components: { sidebar }
 });
 </script>
 

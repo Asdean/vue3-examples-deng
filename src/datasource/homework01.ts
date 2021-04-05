@@ -1,10 +1,7 @@
-/**
- * @author 朱继超
- */
 export interface Course {
-  name: string; // 名称
-  term: number; // 学期
-  point: number; // 学分
+  name: string;   // 名称
+  term: number;   // 学期
+  point: number;    // 学分
 }
 
 export function listCourses() {
